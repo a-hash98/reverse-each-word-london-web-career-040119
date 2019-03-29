@@ -6,5 +6,3 @@ def reverse_each_word(sentence)
   end
   return s_collector
 end
-
-puts reverse_each_word("The cat sat on the mat")
