@@ -1,11 +1,6 @@
 def reverse_each_word(sentence)
-  s_collector = String.new
-  array = sentence.split(/,/)
-  puts array
-  array.each do |element|
-    s_collector.concat(element.reverse)
-  end
-  return s_collector
+  s = sentence.reverse
+  s_to_array = s.split(/,/)
+  s_to_array.collect {|s| s}
 end
-
-puts reverse_each_word("The cat sat on the mat")
+#puts reverse_each_word("The cat sat on the mat")
