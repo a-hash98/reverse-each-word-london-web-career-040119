@@ -1,8 +1,8 @@
 def reverse_each_word(sentence)
   s_collector = String.new
-  array = sentence.chars
+  array = sentence.split(/,/)
   array.each do |element|
-    puts element
+    puts element.reverse
 
   end
   return s_collector
